@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>施工现场专业人员 - 证书信息</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+      background: #2a2a2a;
+    }
+
+    /* 手机端容器 */
+    .body {
+      max-width: 450px;
+      margin: 0 auto;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 90% 45% at 50% 0%, rgba(255, 155, 85, 0.42) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 30% at 15% 8%, rgba(255, 185, 115, 0.18) 0%, transparent 50%),
+        linear-gradient(180deg, #e8352f 0%, #d42321 24%, #cc2022 48%, #c41f21 68%, #bd1e21 82%, #bd1e21 100%);
+      background-size: 100% 100%;
+    }
+
+    /* 右上角点阵 */
+    .body::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 36px;
+      height: 72px;
+      background-image: radial-gradient(circle, rgba(255, 210, 160, 0.55) 1.5px, transparent 1.5px);
+      background-size: 9px 9px;
+      opacity: 0.6;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* 底部建筑剪影 */
+    .body::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 180px;
+      pointer-events: none;
+      z-index: 1;
+      background-color: #bd1e21;
+      background-image: url("picture2.0.png");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+
+    /* 金色大标题 */
+    .headline {
+      position: relative;
+      z-index: 2;
+      font-size: 34px;
+      font-weight: 900;
+      font-family: "Microsoft YaHei", -apple-system, sans-serif;
+      letter-spacing: 1px;
+      line-height: 1.3;
+      padding-top: 55px;
+      text-align: center;
+      background: linear-gradient(to bottom, #fff6e0 0%, #ffd27d 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0px 2px 4px rgba(150, 0, 0, 0.6));
+    }
+
+    /* 白色信息卡片 */
+    .card {
+      position: absolute;
+      top: 32%;
+      left: 6%;
+      width: 88%;
+      font-size: 16px;
+      background-color: #ffffff;
+      border-radius: 28px;
+      padding: 30px 24px;
+      box-shadow: 0 15px 35px rgba(139, 0, 0, 0.25);
+      z-index: 2;
+      overflow: hidden;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cdefs%3E%3Cpattern id='w' width='30' height='30' patternUnits='userSpaceOnUse'%3E%3Cpath d='M0 15 Q7.5 5 15 15 T30 15' fill='none' stroke='%23cccccc' stroke-width='0.4' opacity='0.35'/%3E%3Cpath d='M0 22 Q7.5 12 15 22 T30 22' fill='none' stroke='%23cccccc' stroke-width='0.4' opacity='0.25'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='120' height='120' fill='url(%23w)'/%3E%3C/svg%3E");
+      background-color: #ffffff;
+    }
+
+    .card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 17px;
+      padding-bottom: 5px;
+      color: #222;
+    }
+
+    .title span {
+      width: 5px;
+      height: 20px;
+      background: #c21f23;
+      border-radius: 2px;
+      margin-right: 5px;
+      display: inline-block;
+      position: relative;
+      top: 4px;
+    }
+
+    .card p {
+      line-height: 46px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .card p:last-of-type {
+      border-bottom: none;
+    }
+
+    .card p .label {
+      color: #666666;
+      font-weight: 600;
+    }
+
+    .card p .value {
+      color: #000000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="body">
+    <div class="headline">
+      住房和城乡建设领域<br>施工现场专业人员
+    </div>
+
+    <div class="card">
+      <div class="title"><span></span>个人信息</div>
+
+      <p><span class="label">姓&#x3000;&#x3000;名：</span><span class="value">周文辉</span></p>
+      <p><span class="label">身份证号：</span><span class="value">3601211996403284519</span></p>
+      <p><span class="label">岗位名称：</span><span class="value">标准员</span></p>
+      <p><span class="label">发证时间：</span><span class="value">2025-12-15</span></p>
+      <p><span class="label">发证机构：</span><span class="value">武汉市创博职业培训学校</span></p>
+      <p><span class="label">证书编号：</span><span class="value">0361910193619010595</span></p>
+    </div>
+  </div>
+</body>
+</html>
